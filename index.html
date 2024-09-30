@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+   
+    <!-- Navbar -->
+    <nav class="navbar"data-aos="slide-right" data-aos-duration="2000">
+        <div data-aos="zoom-in" class="logo" data-aos="fade-in">
+            <h2>Tarun Bankar </h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education&skills">Education & Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="mode-switch" id="modeSwitch">Light Mode</button></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="intro" data-aos="fade-in" data-aos-duration="2000">
+        <div class="circular--portrait"> <img src="Images/Blaze.jpg" /> </div>
+        <h1>Welcome to My Portfolio</h1>
+        
+        <div class="rotating-text">
+            <p>Here I Showcase my </p>
+            <p>
+              <span class="word alizarin">Talent.</span>
+              <span class="word wisteria">Work .</span>
+              <span class="word peter-river">Creation.</span>
+              <span class="word emerald">Methods.</span>
+              <span class="word sun-flower">& many more.</span>
+            </p>
+          </div>
+          
+        <div class="social-links">
+            <a href="https://www.instagram.com/_blaze_excel/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/tarun.bankar.3/?_rdr" target="_blank">Facebook</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/TarunTAr" target="_blank">GitHub</a>
+        </div>
+    </section>
+   <br>
+   <br>
+   <br>
+   
+    <!-- About Section -->
+    <section id="about" class="about" data-aos="slide-down" data-aos-duration="2000">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 id="ab" >About Me</h2>
+                <br>
+                <p class="glowIn">"I am an individual with a deep curiosity and love for exploring various aspects of life. As a student currently pursuing my B.Tech degree in AI, I continuously seek to expand my knowledge and experiences. I believe in respecting all people, embracing diversity, and learning from those around me."</p>
+            </div>
+            
+            <div class="about-carousel">
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="Images/Slide-1.png" alt="Slide 1" >
+                            <h3>Team Worker</h3>
+                            <p>I foster collaboration and communication among team members, ensuring everyone's strengths are utilized effectively to achieve our collective goals.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="Images/Slide-2.png" alt="Slide 2">
+                            <h3>Critical Thinker</h3>
+                            <p> I approach challenges with a critical mindset, analyzing situations from multiple angles to develop innovative solutions that address underlying issues.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="Images/Slide-3.jpg" alt="Slide 3">
+                            <h3>Utilize Time Efficiently</h3>
+                            <p>I prioritize tasks effectively and adopt time management strategies to maximize productivity, ensuring that I meet deadlines while maintaining high-quality work.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="my-project-section" >
+        <h2>Projects</h2>
+    
+        <div class="my-project" data-aos="fade-left" data-aos-duration="2000">
+            <div class="my-project-text">
+                <h3 class="glowIn">Tic Tac Toe Game</h3>
+                <p class="glowIn">Created a basic Tic Tac Toe game as a beginner project using C++ technology.</p>
+            </div>
+            <div class="my-project-image" >
+                <img src="Images/Tic-Tac-Toe.webp" alt="Tic Tac Toe Game">
+            </div>
+        </div>
+    
+        <div class="my-project" data-aos="fade-right" data-aos-duration="2000">
+            <div class="my-project-text">
+                <h3 class="glowIn">Blockchain Project</h3>
+                <p class="glowIn">I integrated the Frontend with the Smart Contract. The contract allows interaction with functions declared in it such as setting a number, getting a number, and retrieving an address. The frontend is integrated with Node.js for interaction with these smart contract functions.</p>
+            </div>
+            <div class="my-project-image">
+                <img src="Images/Blockchain.png" alt="Blockchain Project">
+            </div>
+        </div>
+    
+        <div class="my-project" data-aos="fade-left" data-aos-duration="2000">
+            <div class="my-project-text">
+                <h3 class="glowIn">Mini Project - VOXMORPH</h3>
+                <p class="glowIn">As part of a college group project in the 6th semester, we developed a document-driven answering tool named VOXMORPH. This tool allows users to upload documents (.pdf, .csv, .docx, .txt, etc.) and ask questions to gain insights using the power of Natural Language Processing and AI models integrated into the software.</p>
+            </div>
+            <div class="my-project-image">
+                <img src="Images/Generative_AI.png" alt="VoxMorph Project">
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <section class="projects">
+        <h2>My Assessments</h2>
+        <div class="project-cards">
+            <div class="card">
+                Assessment 1
+                <br>
+                <button class="show-btn" data-id="1">Show Details</button>
+                <div class="details" id="details-1">
+                    <p class="glowIn">Details for Assessment 1: This assessment covers the basic CRUD operations using java swing and java jdbc connectivity with SQL database.</p>
+                    <div>
+
+                    
+                    <a href="https://drive.google.com/file/d/1bcHhR_6zsjb9h1zhEbTdxTLpWu67W4Bz/view" class="Assessment-btn">View</a>
+                </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                Assessment 2
+                <br>
+                <button class="show-btn" data-id="2">Show Details</button>
+                <div class="details" id="details-2">
+                    <p class="glowIn">Details for Assessment 2:  This assessment covers the basic CRUD operations using java swing and java Hibernate connectivity with SQL database.</p>
+                    <div>
+                    <a href="https://drive.google.com/file/d/1Qp9z23XalqYwtJhNKoAkCQiSBDBsjUkk/view" class="Assessment-btn">View</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                Assessment 3
+                <br>
+                <button class="show-btn" data-id="3">Show Details</button>
+                <div class="details" id="details-3">
+                    <p class="glowIn">Details for Assessment 3: This assessment is involving to create an interactive frontend using HTML, CSS , JS , Bootstrap .</p>
+                   
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    
+
+    <section id="education & technical skills" class="education & technical skills" data-aos="fade-up" data-aos-duration="2000">
+        <h2>Education & Technical Skills</h2>
+        <div class="flowchart">
+            <div class="box" >
+                </pre>
+                <h3 class="glowIn">B.Tech in Artificial Intelligence Engineering</h3>
+                <p class="glowIn">RTMNU, Priyadarshini JL College of Engineering-----------
+                    Dec 2021 - July 2024-----------Aggregate Percentage: 84%</p>
+            </div>
+            <div class="arrow">&#8595;</div>
+            <div class="box">
+                <h3 class="glowIn">Higher Secondary Certificate</h3>
+                <p class="glowIn">Shri Mathurdas Mohota College of Science-----------
+                    June 2020 - June 2021-----------Percentage: 86.83%</p>
+            </div>
+            <div class="arrow">&#8595;</div>
+            <div class="box">
+                <h3 class="glowIn">Secondary School Certificate</h3>
+                <p class="glowIn">Shahu's Garden High School-----------July 2018 - July 2019-----------Percentage: 84.60%</p>
+            </div>
+            <div class="arrow">&#8595;</div>
+            <div class="box">
+                <h3 class="glowIn">Technical Skills</h3>
+                <p class="glowIn">Programming Languages:----------- Basic: C, Python, AWS, SQL, NoSQL (MongoDB), Solidity ----------- Intermediate: C++, Java, SQL, JavaScript, HTML, CSS-----------
+                Frameworks:----------- Basic: Machine Learning, Natural Language Processing, Deep Learning, React JS, Spring Boot, Tailwind CSS, Bootstrap.</p>
+            </div>
+        </div>
+        <div class="text-box">
+            <a href="https://drive.google.com/file/d/1BO7kjPMnvYuXUVBsgsYNJ2VW2pDolxgD/view?usp=sharing" class="btn btn-white btn-animate">My Resume</a>
+        </div>
+    </section>
+    <section id="Contact" class="Contact" data-aos="slide-down" data-aos-duration="2000"></section>
+        <h2 >Contact</h2>
+        <p class="heading" data-target-resolver>If you have any questions or need assistance, feel free to contact me through my social links or submit this form</p>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contactForm" class="contact-form" onsubmit="validateForm(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Your Contact Number" required pattern="[0-9]{10}">
+                </div>
+        
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <p id="successMessage" class="hidden">Thank you for your submission!</p>
+        </section>
+        
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Tarun Bankar. All Rights Reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
+
+
+
+
+

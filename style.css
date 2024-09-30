@@ -1,0 +1,724 @@
+:root {
+  /* Dark Mode Variables */
+  --dark-bg: #121212;
+  --dark-text: #ffffff;
+  
+  /* Light Mode Variables */
+  --light-bg: #ffffff;
+  --light-text: #fffcfc;
+  
+  /* Primary Color (remains the same in both modes) */
+  --primary-color: #ff6200;
+}
+
+/* General Styles */
+body {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--light-text); /* Will change depending on the mode */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.light-mode body {
+  background-color: var(--light-bg);
+  color: var(--dark-text); /* Black text in light mode */
+}
+
+/* Footer and other elements retaining primary color */
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+.light-mode footer {
+  color: var(--dark-text); /* Dark text on primary background in light mode */
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:600);
+
+* { margin:0; padding:0; }
+
+html, body { width:100vw; height:100vh; } /* just to be sure these are full screen*/
+button{
+  border-radius: 20px;
+  background-color: #03f94d;
+  color: white;
+  padding: 5px;
+}
+button:hover{
+  background-color:darkgreen ;
+  color: white;
+}
+canvas { 
+   overflow: hidden;
+   width:100vw;
+   height:100vh;
+   background-color:black;
+   
+}
+
+
+#home{
+
+  .circular--portrait {
+    position: relative;
+    
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 50%;
+    
+    /* Centering the div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} 
+
+.circular--portrait img { 
+    width: 100%;
+    height: auto; 
+}
+
+ 
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+  }
+  
+  .rotating-text {
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+    transform: translateX(-80px);
+  
+    p {
+      display: inline-flex;
+      margin: 0;
+      vertical-align: top;
+  
+      .word {
+        position: absolute;
+        display: flex;
+        opacity: 0;
+  
+        .letter {
+          transform-origin: center center 25px;
+  
+          &.out {
+            transform: rotateX(90deg);
+            transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+          }
+          &.in {
+            transition: 0.38s ease;
+          }
+          &.behind {
+            transform: rotateX(-90deg);
+          }
+        }
+      }
+    }
+  }
+  
+
+  .alizarin {
+    color: #e74c3c;
+  }
+  
+  .wisteria {
+    color: #8e44ad;
+  }
+  
+  .peter-river {
+    color: #3498db;
+  }
+  
+  .emerald {
+    color: #2ecc71;
+  }
+  
+  .sun-flower {
+    color: #f1c40f;
+  }
+  
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.intro, .about, .projects, .help {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro {
+    background-color: var(--dark-bg);
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 50%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+#ab{
+  margin-right: 500px;
+}
+
+.about p {
+  flex: 1;
+  max-width: 1000px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+
+  body {
+    font-family: sans-serif;
+    background-color: #000000;
+    font-weight: bold;
+    
+}
+
+.text-box {
+    margin-left: 44vw;
+   margin-top: 42vh;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    bottom: -1340.1px;
+  right: 690.7px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.about-carousel {
+  flex: 1;
+  max-width: 60%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  
+}
+
+.slide img {
+ width: 100%;
+  object-fit: cover;
+}
+
+/* Additional Styles for Indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-indicators .indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicators .indicator.active {
+  background-color: #333;
+}
+
+
+.about, .help {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+.my-project-section {
+  padding: 50px;
+  background-color: var(--dark-bg); /* for light mode */
+  color: var(--dark-text);           /* for dark mode */
+}
+
+.my-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-project-text {
+  flex: 1;
+  margin-right: 20px;
+  color: white;
+}
+
+.my-project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  animation: glow 1.5s ease-in-out infinite alternate; /* Adding glow animation */
+}
+
+.my-project p {
+  font-size: 16px;
+}
+
+.my-project-image img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .my-project {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .my-project-text {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .my-project-image img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+      text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
+  }
+  to {
+      text-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+  }
+}
+
+
+
+
+
+:root {
+  --primary-color: #f55e01; /* You can change this as per your primary theme */
+}
+
+.projects {
+  width: 100%;
+  padding: 20px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+}
+
+.card {
+  flex: 1; /* Each card takes equal width */
+  padding: 20px;
+  margin: 10px;
+  background-color: var(--primary-color); /* Color based on root variable */
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 30%; /* Sets card width for responsiveness */
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #03f94d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.card .details {
+  display: none; /* Hidden by default */
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #706408;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.card.active .details {
+  display: block; /* Visible when active */
+}
+
+.card.active {
+  background-color: #f1c40f; /* Changes background color on expand */
+}
+
+.projects button {
+  background-color: #f1c40f; /* Style for project section buttons */
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+}
+.education {
+  padding: 40px;
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  text-align: center;
+}
+
+.flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 80%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.arrow {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.arrow body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(16, 16, 16, 0.8),
+      rgba(16, 16, 16, 0.8)
+    ),
+    url(https://i.loli.net/2019/11/03/RtVq2wxQYySDb8L.jpg);
+  background-size: cover;
+}
+
+.arrow p {
+  margin: 0em 5em 4em 5em;
+}
+
+.arrow  h1, p {
+  text-align: left;
+  line-height: 1.8;
+  font-family: Lora, serif;
+}
+
+.glowIn {
+  color: white;
+
+  span {
+    animation: glow-in 0.8s both;
+  }
+}
+
+@keyframes glow-in {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px white;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+.contact-section {
+  padding: 50px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ff6200;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #b35c00;
+}
+
+#successMessage {
+  color: green;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.Assessment-btn{
+  padding: 10px 20px;
+  background-color:#9a8620;
+  color: white;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  font-size: 16px;
+ 
+
+}
+.Assessment-btn:hover{
+  background-color: #03f94d;
+}
